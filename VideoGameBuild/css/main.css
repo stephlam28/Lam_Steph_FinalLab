@@ -29,7 +29,7 @@ header {
   justify-content: end;
 }
 
-#main-logo { width: 220px; padding: 10px 20px; margin-left: auto; }
+#main-logo { width: 150px; padding: 10px 20px; margin-left: auto; }
 
 /* main rules here */
 #character-nav { margin-left: 30%; max-width: 60%; }
@@ -69,7 +69,16 @@ article {
 /* select the h3 tag inside the article tag on the page */
 /* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
 article h3  {
-  font-size: 2.5em;
+  font-family: 'VALORANT', sans-serif;
+  color: black;
+  font-size: 5em;
+  margin-bottom: 14px;
+}
+
+section article h3  {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 3em;
   margin-bottom: 14px;
 }
 
@@ -79,18 +88,79 @@ article p {
   line-height: 1.2;
 }
 
+.jettbumper {
+  width: 150px;
+  height: 9px;
+  background-color: #77d4e4;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.sagebumper {
+  width: 150px;
+  height: 9px;
+  background-color: #16b199;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.omenbumper {
+  width: 150px;
+  height: 9px;
+  background-color: #778ae7;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.phoenixbumper {
+  width: 150px;
+  height: 9px;
+  background-color: #ff8513;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.sovabumper {
+  width: 150px;
+  height: 9px;
+  background-color: #10255c;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.brimbumper {
+  width: 150px;
+  height: 9px;
+  background-color: #f08a33;
+  
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.characters li:hover .jettbumper { height: 70px; }
+.characters li:hover .sagebumper { height: 70px; }
+.characters li:hover .omenbumper { height: 70px; }
+.characters li:hover .phoenixbumper { height: 70px; }
+.characters li:hover .sovabumper { height: 70px; }
+.characters li:hover .brimbumper { height: 70px; }
+
 .sprite {
   width: 150px;
   height: 150px;
   
-  background-image: url('../images/marvelSprites.jpg');
+  background-image: url('../images/valosprite.png');
 }
 
-#carol { background-position: -150px 0; }
-#clint { background-position: -300px 0; }
-#hulk { background-position: -450px 0; }
-#thor { background-position: -600px 0; }
-#widow { background-position: -750px 0; }
+#sage { background-position: -150px 0; }
+#omen { background-position: -300px 0; }
+#phoenix { background-position: -450px 0; }
+#sova { background-position: -600px 0; }
+#brim { background-position: -750px 0; }
 
 .sprite:hover { background-position-y: -150px !important; }
 
@@ -120,16 +190,22 @@ footer {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.85);
-  background-image: url('../images/Cap_LB_Bg.png');
+  background-image: url('../images/jett/jett.png');
   background-repeat: no-repeat;
 
   background-size: 55vh; /* 55% of the viewport height */
   background-position: 40px bottom;
 
   display: none;
+  position: fixed; 
+  overflow-y: scroll;
 }
 
-#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+#lightbox2 { background-image: url('../images/sage/sage.png') }
+#lightbox3 { background-image: url('../images/omen/omen.png') }
+#lightbox4 { background-image: url('../images/phoenix/phoenix.png') }
+#lightbox5 { background-image: url('../images/sova/sova.png') }
+#lightbox6 { background-image: url('../images/brim/brim.png') }
 
 .lightbox_close {
   position: relative;
